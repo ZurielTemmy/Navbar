@@ -1,15 +1,9 @@
-const navbarBtn = document.querySelector('.navbar_btn')
-const navbarLinks = document.querySelector('.navbar_links')
+const togglebtn = document.getElementsByClassName('toggle-btn')
+const navbar = document.getElementsByClassName('links')
 
-navbarBtn.addEventListener('click', function(){
-    let value = navbarLinks.classList.contains('navbar_collapse')
+togglebtn.addEventListener('click', () => {
 
-    if(value){
-        navbarLinks.classList.remove('navbar_collapse')
-        navbarBtn.classList.remove('change') 
-    }
-    else{
-        navbarLinks.classList.add('navbar_collapse')
-        navbarBtn.classList.add('change')
-    }
+    navbar.classList.toggle('active')
 })
+
+
